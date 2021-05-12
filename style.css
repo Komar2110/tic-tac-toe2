@@ -1,0 +1,97 @@
+* {
+    background-color: #0099ff;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+.info {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.player0, .playerX {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius:0.2em;
+}
+
+.player0:hover, .playerX:hover {
+    background-color: rgba(255,255,255,0.2);
+    transition: 0.4s;
+    cursor: pointer;
+} 
+.field {
+    margin: 30px auto 0 auto;
+    display: grid;
+    opacity: 0.4;
+    width: 400px;
+    height: 400px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.field div {
+    background-size: cover;
+}
+
+.borderTop {
+    border-top: 8px #006699 solid;
+}
+
+
+.borderRight {
+    border-right: 8px #006699 solid;
+}
+
+.score {
+    width: 150px;
+    margin: 30px auto 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    background: rgba(0,0,0,0.4);
+}
+
+.modalDialog {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color:#fff;
+    margin: 10% auto;
+}
+
+.modalContent {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+    color:#000;
+    background-color:#fff;
+}
+
+.modalBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 30px;
+    background-color:#fff;
+    color: #000;
+    cursor: pointer;
+}
