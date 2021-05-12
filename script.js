@@ -19,14 +19,13 @@ const buttonPlayerX = document.querySelector('.playerX'),
       ],
       image0 = 'background-image: url("0.png");',
       imageX = 'background-image: url("x.png");';
-
 let winner0 = 0, winnerX = 0;
 
-buttonPlayerX.addEventListener('click', () => fun(buttonPlayer0, imageX, image0)); 
+buttonPlayerX.addEventListener('click', () => buttonClick(buttonPlayer0, imageX, image0)); 
 
-buttonPlayer0.addEventListener('click', () => fun(buttonPlayerX, image0, imageX));
+buttonPlayer0.addEventListener('click', () => buttonClick(buttonPlayerX, image0, imageX));
 
-function fun (button1, img1, img2) {
+function buttonClick (button1, img1, img2) {
     field.style.opacity = '1';
     button1.setAttribute('disabled', 'disabled');
     field.addEventListener('click', (event) => { 
